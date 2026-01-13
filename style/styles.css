@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .poppins-font {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -8,4 +12,70 @@
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+:root{
+    --inter:"Inter", sans-serif;
+}
+/* shared style */
+.maxWidth{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.primary-btn{
+    background-color: #ff5959;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 16px 21px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+/* main style */
+.banner{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    gap:43px;
+    background: url("../images/Ellipse\ 257.png");
+    background-repeat: no-repeat;
+    background-position:96.5% 100%;
+    /* align-items: center; */
+}
+.banner-text-content{
+    max-width: 524px;
+    margin: 121px 0px 121px 156px;
+}
+.banner-heading{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #121212;
+    margin-bottom: 20px;
+}
+.text{
+    font-size: 1.12rem;
+    line-height: 28px;
+    color: #707070;
+    margin-bottom: 20px;
+}
+.video-btn{
+    border-radius: 5px;
+    color: #707070;
+    padding: 16px 21px;
+    border: none;
+    font-size: 1.12rem;
+    font-weight: 600;
+    
+}
+.video-btn:hover{
+    background-color: #ff5959;
+    color: #FFFFFF;
+    transition: all 0.5s ease-out;
+}
+.banner-img-container{
+    margin-top: 66px;
+    margin-right: 170px;
+}
+.banner-img-container img{
+    vertical-align: middle;
 }
