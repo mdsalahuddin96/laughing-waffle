@@ -19,8 +19,7 @@
 /* shared style */
 .maxWidth{
     max-width: 1440px;
-    margin: 0px 130px auto;
-
+    margin: 0px auto 130px;
 }
 .primary-btn{
     background-color: #ff5959;
@@ -128,12 +127,14 @@ hr{
     margin-bottom: 30px;
 }
 /* Donate plan section */
-.plan-section-heading{
+.plan-section-heading, .update-section{
     max-width: 691px;
     margin: 0px auto 50px;
     text-align: center;
 }
 .plan-card-container{
+    margin: 0 auto;
+    max-width: 1106px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -164,4 +165,52 @@ hr{
 }
 #card3{
     background-color: rgba(255, 244, 214, 1);
+}
+/* Homeless section design */
+.home{
+    margin-top: 0px;
+}
+.homeless-section{
+    max-width: 1032px;
+    margin: 0px 256px 0px 156px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:94px;
+    align-items: center;
+}
+.homeless-content h3, .update-section h3{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #121212;
+    margin-bottom: 20px;
+}
+.img-container img{
+    width: 100%;
+}
+.subscribe-section{
+    max-width: 809px;
+    margin: 50px auto 0px;
+    text-align: center;
+    padding: 76px 0px;
+    background-color: rgba(255, 244, 214, 1);
+}
+.subscribe{
+    background-color: #ff5959;
+    color: #FFFFFF;
+    padding: 14px 43px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 9px 20px -3px rgba(120, 84, 247, 0.33);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.subscribe-section input{
+    background-color: #D9D9D9;
+    width: 275px;
+    padding: 14px 0px 14px 17px;
+    border: 2px solid #D9D9D9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 4 4 0 rgba(0,0,0,0.25);
 }
