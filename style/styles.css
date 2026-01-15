@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.lobster-font {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .poppins-font {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -52,7 +60,6 @@
     background: url("../images/Ellipse\ 257.png");
     background-repeat: no-repeat;
     background-position:96.5% 100%;
-    /* align-items: center; */
 }
 .banner-text-content{
     max-width: 524px;
@@ -214,3 +221,101 @@ hr{
     border-bottom-left-radius: 5px;
     box-shadow: 0 4 4 0 rgba(0,0,0,0.25);
 }
+footer{
+    background-color: #121212;
+    
+}
+.footer-content{
+    max-width: 158px;
+    padding: 44px 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.25rem;
+    color: #ff5959;
+}
+
+/* Responsive for small device */
+@media screen and (max-width:576px) {
+    .banner {
+        flex-direction: column;
+        gap:0px;
+        background-size: contain;
+    }
+    .banner-text-content {
+        margin: 30px auto 0px;
+        text-align: center;
+    }
+    .banner-img-container {
+        margin:20px;
+    }
+    .donate-amount {
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+        margin-bottom: 40px;
+    }
+    .plan-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .plan-card{
+        margin: 20px;
+        text-align: center;
+    }
+    .plan-card div {
+        margin: 0 auto;
+    }
+    .homeless-section {
+        margin: 0px 20px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        align-items: center;
+    }
+    #home-card1{
+        order:1;
+    }
+    #home-card2{
+        order: 2;
+    }
+    #home-card3{
+        order: 4;
+    }
+    #home-card4{
+        order: 3;
+    }
+}
+/* Responsive for medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .banner {
+        flex-direction: column;
+        gap:0px;
+        background-size: contain;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-text-content {
+        margin: 30px auto 0px;
+        text-align: center;
+    }
+    .banner-img-container {
+        margin-right: 0px;
+    }
+    .donate-amount {
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+        margin-bottom: 40px;
+    }
+    .plan-card-container {
+        grid-template-columns: repeat(2,1fr);
+        margin: 10px;
+        gap: 10px;
+    }
+    .homeless-section {
+        margin: 0px 20px;
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+    
+}
+   
